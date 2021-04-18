@@ -1,0 +1,15 @@
+server:
+  port: 8200
+spring:
+  application:
+    name: service-hosp-8200
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://119.29.62.229:7788/shangyitong?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: zxz*1226
+  profiles:
+    active: dev
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
